@@ -47,7 +47,7 @@ func main() {
 	}
 
 	w := csv.NewWriter(os.Stdout)
-	w.Write([]string{"title","categories","tags","date","char_count"})
+	w.Write([]string{"title","category","tag","date","char_count"})
 	if err := w.WriteAll(output); err != nil {
 		log.Fatal(err)
 	}
